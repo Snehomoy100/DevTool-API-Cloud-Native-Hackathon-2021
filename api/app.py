@@ -1,4 +1,4 @@
-from flask import Flask, json, jsonify, request
+from flask import Flask, json, jsonify, request # request module imported
 from flask_sqlalchemy import SQLAlchemy # using SQLite db for our database operations
 
 # have to build the REST API
