@@ -4,7 +4,10 @@ import sqlite3 # sqlite3 database as the database
 import yaml 
 from yaml import load, dump
 from yaml.loader import SafeLoader
-from kubernetes import client, config, watch
+import os # for running cli commands
+
+
+os.system('datree test ~/.datree/k8s-demo.yaml')
 
 from datetime import datetime # for the timestamp things of our db operation
 
@@ -20,32 +23,11 @@ cursor = sqliteConnection.cursor()
 print("Database created and Successfully Connected to SQLite")
 
 
-
-
-
-# Configs can be set in Configuration class directly or using helper utility
-config.load_kube_config()
-
-v1 = client.CoreV1Api()
-count = 10
-w = watch.Watch()
-for event in w.stream(v1.list_namespace, _request_timeout=60):
-    print("Event: %s %s" % (event['type'], event['object'].metadata.name))
-    count -= 1
-    if not count:
-        w.stop()
-
-print("Ended.")
-
-
-
-
-
-
-
-
+# converting the yaml file in json
 with open('fail.yml') as f:
     json_data = yaml.load(f, Loader=SafeLoader)
+
+# def find_targets():
 
 
 @app.route('/')
@@ -55,11 +37,10 @@ def health_check():
 # search api
 @app.route("/search", methods=["POST"])
 def grafana_search():
-    targets = find_targets()
+    targets = find_targets() # fucntion call from grafana json datasource
     return json.dumps(targets)
 
 # query api
-
 @app.route('/query', methods=['POST'])
 def query():
     req = request.get_json()
