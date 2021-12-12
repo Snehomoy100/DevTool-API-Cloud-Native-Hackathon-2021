@@ -1,7 +1,18 @@
 # _CloudNativeHackathon2021_
+![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+## **Programming languages & Tools used**: 
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/githubactions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ### About the project⭐
 Using Kubernetes production best policies to run the k8s manifest files through [Datree.io](https://github.com/datreeio/datree) to prevent Kubernetes misconfigurations from ever reaching production.
+
 
 Reference: [Kubernetes production best policies](https://github.com/learnk8s/kubernetes-production-best-practices)
 
@@ -27,6 +38,10 @@ Reference: [Kubernetes production best policies](https://github.com/learnk8s/kub
 2. Then go to ```cd Cloud-Native-Hackathon-2021``` ->```cd api```
 3. Set up the virtual environment using ```source env/bin/activate```
 4. Install the required modules ```pip install -r requirements.txt```
+5. **Directory** would look as follows: 
+
+![directory](https://user-images.githubusercontent.com/57084217/145708872-9e2e8c85-cbf8-40fc-b2b2-690dfc5b4e48.PNG)
+
 
 ### Docker🐋
 By default, the Docker will expose port 5000, so change this within the
