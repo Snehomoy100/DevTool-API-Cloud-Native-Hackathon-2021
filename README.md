@@ -19,8 +19,6 @@
 
 [Civo](https://www.civo.com/docs)
 
-[Twilio](https://github.com/twilio/hackathons)
-
 ### About the project⭐
 Using Kubernetes production best policies to run the k8s manifest files through [Datree.io](https://github.com/datreeio/datree) to prevent Kubernetes misconfigurations from ever reaching production.
 - Clusters are created using Kubernetes in Civo
