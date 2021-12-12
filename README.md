@@ -22,8 +22,9 @@
 ### About the project⭐
 Using Kubernetes production best policies to run the k8s manifest files through [Datree.io](https://github.com/datreeio/datree) to prevent Kubernetes misconfigurations from ever reaching production.
 
+**Pull request to Datree**: [PRtoDatree](https://github.com/datreeio/datree/pull/332)
 
-Reference: [Kubernetes production best policies](https://github.com/learnk8s/kubernetes-production-best-practices)
+**Reference**: [Kubernetes production best policies](https://github.com/learnk8s/kubernetes-production-best-practices)
 
 **Added next custom policies recommended for production environment✅:**
 
