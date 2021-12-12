@@ -23,6 +23,12 @@
 
 ### About the project⭐
 Using Kubernetes production best policies to run the k8s manifest files through [Datree.io](https://github.com/datreeio/datree) to prevent Kubernetes misconfigurations from ever reaching production.
+- Clusters are created using Kubernetes in Civo
+- DevOps(Configurations, etc)
+- Flask API integration
+- Python runs Datree commands and POST request to API
+- Metrics and logs of the configurations are checked using Grafana (Devtron)
+- Notification to the user using Twilio
 
 **Pull request to Datree**: [PRtoDatree](https://github.com/datreeio/datree/pull/332)
 
