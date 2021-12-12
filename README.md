@@ -10,6 +10,15 @@
 ![GitHub Actions](https://img.shields.io/badge/githubactions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
 
+## Sponsor Tools used:
+[Datree.io](https://github.com/datreeio/datree)
+
+[Devtron](https://github.com/devtron-labs/devtron)
+
+[Civo](https://www.civo.com/docs)
+
+[Twilio](https://github.com/twilio/hackathons)
+
 ### About the project⭐
 Using Kubernetes production best policies to run the k8s manifest files through [Datree.io](https://github.com/datreeio/datree) to prevent Kubernetes misconfigurations from ever reaching production.
 
