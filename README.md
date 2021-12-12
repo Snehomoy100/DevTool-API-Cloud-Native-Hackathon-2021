@@ -47,7 +47,7 @@ Reference: [Kubernetes production best policies](https://github.com/learnk8s/kub
 2. Then go to ```cd Cloud-Native-Hackathon-2021``` ->```cd api```
 3. Set up the virtual environment using ```source env/bin/activate```
 4. Install the required modules ```pip install -r requirements.txt```
-5. **Directory** would look as follows: 
+5. **Directory** will look as follows: 
 
 ![directory](https://user-images.githubusercontent.com/57084217/145708872-9e2e8c85-cbf8-40fc-b2b2-690dfc5b4e48.PNG)
 
