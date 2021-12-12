@@ -1,7 +1,9 @@
-from flask import Flask, json, jsonify, request # request module imported
+from flask import Flask, json, jsonify, request # request module imported  
 from flask_sqlalchemy import SQLAlchemy # using SQLite db for our database operations
-
-# have to build the REST API
+import sqlite3 # sqlite3 database as the database 
+import yaml 
+from yaml import load, dump
+from yaml.loader import SafeLoader
 
 
 from datetime import datetime # for the timestamp things of our db operation
@@ -13,28 +15,27 @@ db = SQLAlchemy(app) # database object
 # creating an API object
 # api = Api(app)
 
-class Todo(db.Model): # database model
-    id = db.Column(db.Integer, primary_key=True)
-    content = db.Column(db.String(200), nullable=False)
-    completed = db.Column(db.Integer, default=0)
-    date_created = db.Column(db.DateTime, default=datetime.utcnow)
-    def __repr__(self):
-        return '<Task %r>' % self.id
+sqliteConnection = sqlite3.connect('test.db') # database connection
+cursor = sqliteConnection.cursor()
+print("Database created and Successfully Connected to SQLite")
 
 
-@app.route('/data', methods = ['GET', 'POST'])
-def home():
-    if(request.method == 'GET'): # api for GET req 
-  
-        data = "hello world"
-        return jsonify({'data': data}), 200
-    
+@app.route('/')
+def health_check():
+  return 'Test Connection'
 
-    if(request.method == 'POST'): # api for POST req
-        data = request.get_json()
-        return jsonify({'data': data}), 201 # status code
-    
-    # have to integrate the POST with the db
+# search api
+@app.route('/search', methods=['POST'])
+def search():
+  return jsonify(['my_series', 'another_series'])
+
+# query api
+
+# @app.route('/query', methods=['POST'])
+# def query():
+#     req = request.get_json()
+#     data = 
+#     return jsonify(data)
 
 
 if __name__ == "__main__": # running the app
