@@ -1,7 +1,7 @@
 # _CloudNativeHackathon2021_
 **NAME OF THE PROJECT:** DEVTOOL API
 **Video Demo of the project**
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/DNmgIxrbZkA)
+[![Watch the video](https://drive.google.com/file/d/1LukkH4fBy8zMOqR8O92Q04PDivnS4Skr/view?usp=sharing)](https://youtu.be/DNmgIxrbZkA)
 
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
